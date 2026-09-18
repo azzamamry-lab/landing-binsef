@@ -77,7 +77,7 @@ nav a:hover{color:var(--gold-bright)}
 /* ---------- Hero: gelap + pola geometris islami ---------- */
 .hero{
   background:var(--navy);color:#fff;position:relative;overflow:hidden;
-  padding:66px 0 72px;
+  padding:52px 0 58px;
 }
 .hero::before{
   content:"";position:absolute;inset:0;opacity:.5;
@@ -115,9 +115,10 @@ nav a:hover{color:var(--gold-bright)}
   position:relative;padding:20px 0 20px 20px;
 }
 .kabah-frame{
+  position:relative;
   border-radius:22px;overflow:hidden;border:1px solid rgba(201,162,39,.28);
   box-shadow:0 26px 60px rgba(3,10,22,.55);
-  margin-bottom:88px;   /* ruang untuk kartu harga di bawah ilustrasi */
+  margin-bottom:20px;
 }
 .aside-price{
   position:absolute;left:0;bottom:0;right:20px;background:var(--paper);color:var(--ink);
@@ -394,101 +395,20 @@ footer{background:var(--navy-mid);color:#93A9C4;padding:44px 0 30px;font-size:14
 
     <div class="kabah-panel">
       <div class="kabah-frame">
-        <!-- Ilustrasi Ka'bah (SVG dibuat sendiri, bukan aset pihak lain) -->
-        <svg viewBox="0 0 400 300" role="img" aria-label="Ilustrasi Ka'bah dan Masjidil Haram" style="width:100%;display:block;background:#0A1A30">
-          <defs>
-            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#0E2542"/>
-              <stop offset="100%" stop-color="#071426"/>
-            </linearGradient>
-            <linearGradient id="kabahSide" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stop-color="#101820"/>
-              <stop offset="100%" stop-color="#1C2833"/>
-            </linearGradient>
-            <linearGradient id="kabahFront" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#1A222B"/>
-              <stop offset="100%" stop-color="#0B1016"/>
-            </linearGradient>
-            <radialGradient id="glow" cx="50%" cy="45%" r="55%">
-              <stop offset="0%" stop-color="#C9A227" stop-opacity=".30"/>
-              <stop offset="100%" stop-color="#C9A227" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-
-          <rect width="400" height="300" fill="url(#sky)"/>
-          <ellipse cx="200" cy="140" rx="150" ry="120" fill="url(#glow)"/>
-
-          <!-- Silhouette Masjidil Haram -->
-          <g fill="#0F2138" stroke="#C9A227" stroke-opacity=".30" stroke-width="1">
-            <rect x="18" y="96" width="30" height="150" rx="3"/>
-            <rect x="52" y="72" width="22" height="174" rx="3"/>
-            <path d="M56 72h14l-7-16z"/>
-            <rect x="330" y="70" width="24" height="176" rx="3"/>
-            <path d="M334 70h16l-8-17z"/>
-            <rect x="358" y="98" width="28" height="148" rx="3"/>
-            <rect x="86" y="120" width="40" height="126" rx="3"/>
-            <rect x="268" y="118" width="42" height="128" rx="3"/>
-          </g>
-
-          <!-- Clock tower -->
-          <g>
-            <rect x="176" y="46" width="48" height="76" rx="4" fill="#122944" stroke="#C9A227" stroke-opacity=".4"/>
-            <rect x="190" y="16" width="20" height="34" rx="2" fill="#16314F" stroke="#C9A227" stroke-opacity=".4"/>
-            <path d="M190 16h20l-10-12z" fill="#C9A227" fill-opacity=".75"/>
-            <circle cx="200" cy="80" r="13" fill="#0B1F3A" stroke="#C9A227" stroke-width="1.6"/>
-            <circle cx="200" cy="80" r="13" fill="none" stroke="#E2BC3F" stroke-opacity=".5"/>
-            <path d="M200 80V71M200 80l7 5" stroke="#E2BC3F" stroke-width="1.6" stroke-linecap="round"/>
-            <rect x="192" y="100" width="16" height="22" fill="#C9A227" fill-opacity=".18"/>
-          </g>
-
-          <!-- KA'BAH -->
-          <g transform="translate(0,6)">
-            <path d="M162 128 L240 128 L240 214 L162 214 Z" fill="url(#kabahFront)"/>
-            <path d="M240 128 L280 142 L280 222 L240 214 Z" fill="url(#kabahSide)"/>
-            <path d="M162 128 L204 114 L280 142 L240 128 Z" fill="#2C3846"/>
-            <path d="M162 128 L204 114 L280 142" fill="none" stroke="#C9A227" stroke-width="2.6"/>
-            <path d="M162 128 L240 128M204 114 L204 210M240 128 L240 214" stroke="#C9A227" stroke-opacity=".35" stroke-width="1"/>
-            <!-- Kiswah gold band (lebih tebal & terang) -->
-            <rect x="162" y="152" width="78" height="13" fill="#C9A227"/>
-            <rect x="240" y="157" width="40" height="12" fill="#E2BC3F" fill-opacity=".75"/>
-            <rect x="162" y="152" width="78" height="13" fill="none" stroke="#8A6E14" stroke-width=".8"/>
-            <path d="M170 158.5h62M248 163h26" stroke="#8A6E14" stroke-width="1" stroke-dasharray="3 3"/>
-            <!-- Bab (pintu) -->
-            <rect x="186" y="178" width="30" height="36" rx="2" fill="#C9A227" fill-opacity=".35"/>
-            <rect x="186" y="178" width="30" height="36" rx="2" fill="none" stroke="#E2BC3F" stroke-width="1.8"/>
-            <text x="201" y="172" text-anchor="middle" fill="#E2BC3F" font-size="9.5" font-family="Georgia,serif">&#1575;&#1604;&#1603;&#1593;&#1576;&#1577;</text>
-            <!-- Hajar Aswad marker -->
-            <circle cx="163.5" cy="174" r="2.6" fill="#E2BC3F"/>
-            <path d="M162 214 L240 214 L280 222 L204 225 Z" fill="#0A0F14"/>
-            <path d="M162 214 L240 214 L280 222 L204 225 Z" fill="none" stroke="#C9A227" stroke-opacity=".3"/>
-          </g>
-
-          <!-- Ground -->
-          <rect y="248" width="400" height="52" fill="#08182E"/>
-          <path d="M0 248h400" stroke="#C9A227" stroke-opacity=".25"/>
-
-          <!-- Pilgrim silhouettes -->
-          <g fill="#1B3A5C" opacity=".9">
-            <ellipse cx="96" cy="252" rx="7" ry="9"/><rect x="91" y="259" width="10" height="18" rx="4"/>
-            <ellipse cx="120" cy="256" rx="6" ry="8"/><rect x="116" y="262" width="8" height="15" rx="3.5"/>
-            <ellipse cx="288" cy="253" rx="7" ry="9"/><rect x="283" y="260" width="10" height="18" rx="4"/>
-            <ellipse cx="312" cy="257" rx="6" ry="8"/><rect x="308" y="263" width="8" height="15" rx="3.5"/>
-          </g>
-
-          <!-- Crescent -->
-          <g transform="translate(348,44)">
-            <circle r="13" fill="none" stroke="#C9A227" stroke-opacity=".55" stroke-width="1.6"/>
-            <circle cx="5" cy="-3" r="11" fill="#0A1A30"/>
-          </g>
-        </svg>
-      </div>
-
-      <div class="aside-price">
-        <div>
-          <div class="lbl">Visa Umroh Grup</div>
-          <div class="val">$118 <small>/ pax</small></div>
+        <img src="img/kabah-hero.jpg"
+                     alt="Ka'bah di Masjidil Haram, Makkah, dikelilingi jamaah yang sedang tawaf"
+                     width="1400" height="953" loading="eager" decoding="async"
+                     style="width:100%;display:block;object-fit:cover;object-position:center 55%;aspect-ratio:4/3">
+                <!-- Foto: Wikimedia Commons, lisensi CC0 (Public Domain). Lihat img/SUMBER-DAN-LISENSI.txt -->
+                <div style="position:absolute;left:0;right:0;bottom:0;height:45%;background:linear-gradient(to top,rgba(11,31,58,.88),rgba(11,31,58,.30) 55%,transparent);pointer-events:none"></div>
+        <!-- Kartu harga di atas foto -->
+        <div style="position:absolute;left:22px;right:22px;bottom:22px;background:rgba(255,255,255,.97);border-radius:14px;padding:16px 20px;border-left:5px solid var(--gold);box-shadow:0 14px 34px rgba(3,10,22,.5);display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap">
+          <div>
+            <div style="font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:#5F6E80;font-weight:700;margin-bottom:2px">Visa Umroh Grup</div>
+            <div style="font-size:27px;font-weight:800;color:#14315C;line-height:1.05">$118 <small style="font-size:13px;font-weight:600;color:#5F6E80">/ pax</small></div>
+          </div>
+          <div style="font-size:12px;color:#5F6E80;max-width:150px;text-align:right">Termasuk 5 layanan perjalanan</div>
         </div>
-        <div class="sub" style="max-width:190px;text-align:right">Sudah termasuk 5 layanan perjalanan</div>
       </div>
     </div>
   </div>

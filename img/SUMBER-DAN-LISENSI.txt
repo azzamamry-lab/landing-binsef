@@ -1,0 +1,25 @@
+SUMBER GAMBAR & LISENSI
+=========================
+
+Semua gambar berlisensi CC0 1.0 Universal (Public Domain Dedication):
+bebas dipakai untuk keperluan komersial, tanpa wajib mencantumkan kredit.
+
+1. kabah-hero.jpg
+   Judul   : Direction-Kaaba
+   Sumber  : Wikimedia Commons
+   Lisensi : CC0 1.0 Universal (Public Domain Dedication)
+   URL     : https://commons.wikimedia.org/wiki/File:Direction-Kaaba.jpg
+
+2. kabah-alt.jpg
+   Judul   : Kaaba Al-Musharrafah
+   Sumber  : Wikimedia Commons
+   Lisensi : CC0 1.0 Universal (Public Domain Dedication)
+   URL     : https://commons.wikimedia.org/wiki/File:Kaaba_Al-Musharrafah.jpg
+
+CATATAN LISENSI CC0
+-------------------
+CC0 berarti pemilik hak cipta melepaskan seluruh haknya di seluruh dunia,
+secara permanen dan tidak dapat dibatalkan. Gambar dapat disalin, dimodifikasi,
+didistribusikan, dan digunakan untuk tujuan komersial, tanpa meminta izin.
+
+Sumber pencarian: https://commons.wikimedia.org
