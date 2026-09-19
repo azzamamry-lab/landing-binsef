@@ -13,14 +13,14 @@
    Design Read: B2B umroh visa untuk pemilik biro travel,
    korporat Islami navy-and-gold dengan hero gelap berpola,
    dial ENERGY 3 / RHYTHM 3 / MOTION 2
-   Palette (R-29): navy #0B1F3A, putih, gold #C9A227
+   Palette (R-29): navy #1256A0, putih, gold #C9A227
    Font: Plus Jakarta Sans (sans modern, dipilih untuk kesan bersih
    dan mudah dibaca di HP; bukan default Inter/Geist)
    ================================================================ */
 :root{
-  --navy:#0B1F3A;
-  --navy-mid:#14315C;
-  --navy-soft:#1E4272;
+  --navy:#1256A0;
+  --navy-mid:#0B3A6F;
+  --navy-soft:#1E6FC4;
   --gold:#C9A227;
   --gold-bright:#E2BC3F;
   --gold-pale:#F3E7C3;
@@ -346,7 +346,7 @@ footer{background:var(--navy-mid);color:#93A9C4;padding:44px 0 30px;font-size:14
   <div class="wrap bar">
     <a class="brand" href="#atas" aria-label="BIN SEF, kembali ke atas">
       <svg viewBox="0 0 64 64" role="img" aria-label="Logo BIN SEF">
-        <path d="M32 4 60 20v28L32 64 4 48V20z" fill="#14315C"/>
+        <path d="M32 4 60 20v28L32 64 4 48V20z" fill="#0B3A6F"/>
         <path d="M32 4 60 20 32 36 4 20z" fill="#1B3E70"/>
         <path d="M32 4 60 20 32 36 4 20z" fill="none" stroke="#C9A227" stroke-width="2.2"/>
         <path d="M32 36v28M4 20v28l28 16 28-16V20" fill="none" stroke="#C9A227" stroke-width="2.2"/>
@@ -359,6 +359,7 @@ footer{background:var(--navy-mid);color:#93A9C4;padding:44px 0 30px;font-size:14
     </a>
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navUtama" aria-label="Buka menu">&#9776;</button>
     <nav id="navUtama" aria-label="Navigasi utama">
+      <a href="visa.html">Visa</a>
       <a href="#layanan">Layanan</a>
       <a href="#paket">Paket</a>
       <a href="#proses">Proses</a>
@@ -384,7 +385,7 @@ footer{background:var(--navy-mid);color:#93A9C4;padding:44px 0 30px;font-size:14
           Ajukan Grup Sekarang
           <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a class="btn btn-ghost" href="#paket">Lihat Rincian Paket</a>
+        <a class="btn btn-ghost" href="visa.html">Lihat Jenis Visa</a>
       </div>
       <div class="hero-meta">
         <div><strong>$118</strong> Visa umroh per pax</div>
@@ -405,7 +406,7 @@ footer{background:var(--navy-mid);color:#93A9C4;padding:44px 0 30px;font-size:14
         <div style="position:absolute;left:22px;right:22px;bottom:22px;background:rgba(255,255,255,.97);border-radius:14px;padding:16px 20px;border-left:5px solid var(--gold);box-shadow:0 14px 34px rgba(3,10,22,.5);display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap">
           <div>
             <div style="font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:#5F6E80;font-weight:700;margin-bottom:2px">Visa Umroh Grup</div>
-            <div style="font-size:27px;font-weight:800;color:#14315C;line-height:1.05">$118 <small style="font-size:13px;font-weight:600;color:#5F6E80">/ pax</small></div>
+            <div style="font-size:27px;font-weight:800;color:#0B3A6F;line-height:1.05">$118 <small style="font-size:13px;font-weight:600;color:#5F6E80">/ pax</small></div>
           </div>
           <div style="font-size:12px;color:#5F6E80;max-width:150px;text-align:right">Termasuk 5 layanan perjalanan</div>
         </div>
@@ -456,6 +457,37 @@ footer{background:var(--navy-mid);color:#93A9C4;padding:44px 0 30px;font-size:14
     </span>
   </div>
 </div>
+
+<!-- ============ VISA (ringkas, tautan ke halaman visa) ============ -->
+<section id="visa" style="background:linear-gradient(160deg,#EAF2FA 0%,#FDFCF8 60%,#F7EFD6 100%);border-bottom:1px solid #DCE5EF">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Pengurusan Visa</div>
+      <h2>Visa umroh, dari mandiri sampai grup</h2>
+      <p>Harga jelas per pax. Proses 2 sampai 3 hari untuk visa mandiri.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-bottom:30px">
+      <div style="background:#fff;border:1px solid #DCE5EF;border-radius:14px;padding:22px 20px">
+        <div style="font-size:11.5px;letter-spacing:1.6px;text-transform:uppercase;color:#C9A227;font-weight:800;margin-bottom:6px">Visa Group</div>
+        <div style="font-size:31px;font-weight:800;color:#1256A0;line-height:1;margin-bottom:4px">$165</div>
+        <div style="font-size:13px;color:#5C7086">per pax &middot; minimal 25 pax</div>
+      </div>
+      <div style="background:#fff;border:1px solid #DCE5EF;border-radius:14px;padding:22px 20px">
+        <div style="font-size:11.5px;letter-spacing:1.6px;text-transform:uppercase;color:#C9A227;font-weight:800;margin-bottom:6px">Visa Mandiri</div>
+        <div style="font-size:31px;font-weight:800;color:#1256A0;line-height:1;margin-bottom:4px">$200</div>
+        <div style="font-size:13px;color:#5C7086">per pax &middot; proses 2 sampai 3 hari</div>
+      </div>
+      <div style="background:#fff;border:1px solid #DCE5EF;border-radius:14px;padding:22px 20px">
+        <div style="font-size:11.5px;letter-spacing:1.6px;text-transform:uppercase;color:#C9A227;font-weight:800;margin-bottom:6px">Visa Tourist</div>
+        <div style="font-size:31px;font-weight:800;color:#1256A0;line-height:1;margin-bottom:4px">$600</div>
+        <div style="font-size:13px;color:#5C7086">per pax &middot; multiple 1 tahun</div>
+      </div>
+    </div>
+    <div style="text-align:center">
+      <a class="btn btn-navy" href="visa.html">Lihat Semua Jenis Visa</a>
+    </div>
+  </div>
+</section>
 
 <!-- ============ LAYANAN (bernomor) ============ -->
 <section id="layanan">
@@ -633,52 +665,52 @@ footer{background:var(--navy-mid);color:#93A9C4;padding:44px 0 30px;font-size:14
         <span class="op">Termasuk semua paket</span>
       </div>
       <div class="inc">
-        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><rect x="3.5" y="3" width="13" height="14" rx="2" fill="none" stroke="#14315C" stroke-width="1.6"/><path d="M6.5 8h7M6.5 11.5h5" stroke="#14315C" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><rect x="3.5" y="3" width="13" height="14" rx="2" fill="none" stroke="#0B3A6F" stroke-width="1.6"/><path d="M6.5 8h7M6.5 11.5h5" stroke="#0B3A6F" stroke-width="1.6" stroke-linecap="round"/></svg></div>
         <strong>Visa umroh grup</strong>
         <span>Diproses kolektif untuk seluruh jamaah dalam satu grup.</span>
       </div>
       <div class="inc">
-        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><rect x="2.5" y="4.5" width="15" height="9.5" rx="2" fill="none" stroke="#14315C" stroke-width="1.6"/><circle cx="6.5" cy="15.5" r="1.6" fill="#14315C"/><circle cx="13.5" cy="15.5" r="1.6" fill="#14315C"/></svg></div>
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><rect x="2.5" y="4.5" width="15" height="9.5" rx="2" fill="none" stroke="#0B3A6F" stroke-width="1.6"/><circle cx="6.5" cy="15.5" r="1.6" fill="#0B3A6F"/><circle cx="13.5" cy="15.5" r="1.6" fill="#0B3A6F"/></svg></div>
         <strong>Bus baru 2026</strong>
         <span>Armada baru, dilengkapi pendingin dan bagasi koper.</span>
       </div>
       <div class="inc">
-        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 6.5h12M4 10h12M4 13.5h12" stroke="#14315C" stroke-width="1.6" stroke-linecap="round"/><circle cx="7" cy="4" r="1.5" fill="#14315C"/></svg></div>
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 6.5h12M4 10h12M4 13.5h12" stroke="#0B3A6F" stroke-width="1.6" stroke-linecap="round"/><circle cx="7" cy="4" r="1.5" fill="#0B3A6F"/></svg></div>
         <strong>Catering full board</strong>
         <span>Makan tiga kali sehari di restoran hotel.</span>
       </div>
       <div class="inc">
-        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="6.5" r="3" fill="none" stroke="#14315C" stroke-width="1.6"/><path d="M4 17c0-3.3 2.7-5 6-5s6 1.7 6 5" fill="none" stroke="#14315C" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="6.5" r="3" fill="none" stroke="#0B3A6F" stroke-width="1.6"/><path d="M4 17c0-3.3 2.7-5 6-5s6 1.7 6 5" fill="none" stroke="#0B3A6F" stroke-width="1.6" stroke-linecap="round"/></svg></div>
         <strong>Muthowif dan muthowifah</strong>
         <span>Pembimbing ibadah bersertifikat, mendampingi selama rangkaian umroh.</span>
       </div>
       <div class="inc">
-        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5 16 5v5c0 4-2.6 6.4-6 7.5-3.4-1.1-6-3.5-6-7.5V5z" fill="none" stroke="#14315C" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5 16 5v5c0 4-2.6 6.4-6 7.5-3.4-1.1-6-3.5-6-7.5V5z" fill="none" stroke="#0B3A6F" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
         <strong>Handling bandara KSA</strong>
         <span>Pengurusan kedatangan dan kepulangan di bandara Arab Saudi.</span>
       </div>
       <div class="inc">
-        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 3h8l-1 5H7z" fill="none" stroke="#14315C" stroke-width="1.6" stroke-linejoin="round"/><path d="M7 8h6v9H7z" fill="none" stroke="#14315C" stroke-width="1.6"/></svg></div>
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 3h8l-1 5H7z" fill="none" stroke="#0B3A6F" stroke-width="1.6" stroke-linejoin="round"/><path d="M7 8h6v9H7z" fill="none" stroke="#0B3A6F" stroke-width="1.6"/></svg></div>
         <strong>Welcome drink, zamzam, dan kurma</strong>
         <span>Disambut begitu turun dari bus di depan hotel.</span>
       </div>
       <div class="inc">
-        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="6" width="14" height="10" rx="2" fill="none" stroke="#14315C" stroke-width="1.6"/><path d="M3 9.5h14" stroke="#14315C" stroke-width="1.6"/></svg></div>
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="6" width="14" height="10" rx="2" fill="none" stroke="#0B3A6F" stroke-width="1.6"/><path d="M3 9.5h14" stroke="#0B3A6F" stroke-width="1.6"/></svg></div>
         <strong>Nasi box datang dan pulang</strong>
         <span>Makanan siap santap untuk perjalanan panjang.</span>
       </div>
       <div class="inc">
-        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7" fill="none" stroke="#14315C" stroke-width="1.6"/><path d="M10 6v8M7.5 8.5h5" stroke="#14315C" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7" fill="none" stroke="#0B3A6F" stroke-width="1.6"/><path d="M10 6v8M7.5 8.5h5" stroke="#0B3A6F" stroke-width="1.6" stroke-linecap="round"/></svg></div>
         <strong>Snack perjalanan 4 kali</strong>
         <span>Dibagikan di titik-titik perjalanan yang sudah dijadwalkan.</span>
       </div>
       <div class="inc">
-        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="6.5" width="14" height="10" rx="2" fill="none" stroke="#14315C" stroke-width="1.6"/><path d="M7 6.5V5a2.5 2.5 0 015 0v1.5" fill="none" stroke="#14315C" stroke-width="1.6"/></svg></div>
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="6.5" width="14" height="10" rx="2" fill="none" stroke="#0B3A6F" stroke-width="1.6"/><path d="M7 6.5V5a2.5 2.5 0 015 0v1.5" fill="none" stroke="#0B3A6F" stroke-width="1.6"/></svg></div>
         <strong>Check in kamar dan distribusi koper</strong>
         <span>Koper diantar ke kamar masing-masing jamaah.</span>
       </div>
       <div class="inc">
-        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 3h4v4l-1.5 1v9h-1v-9L8 7z" fill="none" stroke="#14315C" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 3h4v4l-1.5 1v9h-1v-9L8 7z" fill="none" stroke="#0B3A6F" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
         <strong>Zamzam kepulangan 5 liter</strong>
         <span>Dikemas untuk dibawa pulang, sesuai ketentuan maskapai.</span>
       </div>
@@ -817,7 +849,7 @@ footer{background:var(--navy-mid);color:#93A9C4;padding:44px 0 30px;font-size:14
       <div>
         <div style="display:flex;align-items:center;gap:11px;margin-bottom:13px">
           <svg width="34" height="34" viewBox="0 0 64 64" role="img" aria-label="Logo BIN SEF">
-            <path d="M32 4 60 20v28L32 64 4 48V20z" fill="#14315C"/>
+            <path d="M32 4 60 20v28L32 64 4 48V20z" fill="#0B3A6F"/>
             <path d="M32 4 60 20 32 36 4 20z" fill="#1B3E70"/>
             <path d="M32 4 60 20 32 36 4 20z" fill="none" stroke="#C9A227" stroke-width="2.2"/>
             <path d="M32 36v28M4 20v28l28 16 28-16V20" fill="none" stroke="#C9A227" stroke-width="2.2"/>
@@ -832,7 +864,7 @@ footer{background:var(--navy-mid);color:#93A9C4;padding:44px 0 30px;font-size:14
       <div>
         <h4>Layanan</h4>
         <ul>
-          <li><a href="#layanan">Visa umroh grup</a></li>
+          <li><a href="visa.html">Visa umroh</a></li>
           <li><a href="#paket">Paket land arrangement</a></li>
           <li><a href="#transport">Transportasi</a></li>
         </ul>

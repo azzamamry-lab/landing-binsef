@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply Visa Umroh | BIN SEF - B2B Land Arrangement Specialist</title>
+<meta name="description" content="Pengajuan visa umroh Saudi Arabia untuk biro travel dan agen. Visa mandiri, visa group, haji furoda, visa tourist. Proses 2 sampai 3 hari.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ================================================================
+   Halaman Visa BIN SEF
+   Design Read: daftar jenis visa untuk pemilik biro travel,
+   korporat Islami biru langit dan emas, dial ENERGY 2 / RHYTHM 2 / MOTION 1
+   Palette (R-29): biru #1256A0, putih, emas #C9A227
+   ================================================================ */
+:root{
+  --biru:#1256A0;
+  --biru-muda:#1E6FC4;
+  --biru-tua:#0B3A6F;
+  --biru-langit:#EAF2FA;
+  --emas:#C9A227;
+  --emas-terang:#E2BC3F;
+  --emas-pucat:#F7EFD6;
+  --putih:#FFFFFF;
+  --abu:#F6F8FB;
+  --tinta:#16283D;
+  --redup:#5C7086;
+  --garis:#DCE5EF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Plus Jakarta Sans",Segoe UI,system-ui,sans-serif;
+  color:var(--tinta);background:var(--putih);line-height:1.62;font-size:16px;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--emas);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+
+/* ---------- Header ---------- */
+header{
+  position:sticky;top:0;z-index:60;background:rgba(255,255,255,.97);
+  backdrop-filter:blur(10px) saturate(150%);border-bottom:1px solid var(--garis);
+}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+.brand svg{width:38px;height:38px;flex-shrink:0}
+.wordmark{font-size:20px;font-weight:800;color:var(--biru-tua);letter-spacing:.5px;line-height:1.05}
+.wordmark span{color:var(--emas)}
+.tagline{font-size:9.5px;color:var(--redup);letter-spacing:1.1px;text-transform:uppercase;font-weight:600}
+nav{display:flex;align-items:center;gap:26px}
+nav a{text-decoration:none;font-size:14.5px;font-weight:600;color:var(--biru-tua);transition:color .18s}
+nav a:hover{color:var(--emas)}
+nav a.aktif{color:var(--emas)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  text-decoration:none;font-weight:700;font-size:14.5px;
+  padding:12px 24px;border-radius:8px;border:2px solid transparent;
+  cursor:pointer;font-family:inherit;transition:transform .18s,background .18s,box-shadow .18s;
+}
+.btn-emas{background:var(--emas);color:var(--biru-tua);border-color:var(--emas);box-shadow:0 6px 18px rgba(201,162,39,.25)}
+.btn-emas:hover{background:var(--emas-terang);border-color:var(--emas-terang);transform:translateY(-2px)}
+.btn-biru{background:var(--biru);color:#fff;border-color:var(--biru)}
+.btn-biru:hover{background:var(--biru-muda);border-color:var(--biru-muda);transform:translateY(-2px)}
+.menu-btn{display:none;background:var(--abu);border:1px solid var(--garis);border-radius:8px;
+  padding:9px 12px;cursor:pointer;color:var(--biru-tua);font-size:17px;line-height:1}
+
+/* ---------- Hero ---------- */
+.hero{
+  background:linear-gradient(165deg,var(--biru-langit) 0%,#FDFCF8 55%,var(--emas-pucat) 100%);
+  padding:62px 0 58px;position:relative;overflow:hidden;
+  border-bottom:1px solid var(--garis);
+}
+.hero::before{
+  content:"";position:absolute;right:-140px;top:-140px;width:460px;height:460px;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,162,39,.16),transparent 70%);
+}
+.hero::after{
+  content:"";position:absolute;left:-120px;bottom:-160px;width:400px;height:400px;border-radius:50%;
+  background:radial-gradient(circle,rgba(18,86,160,.10),transparent 70%);
+}
+.hero .wrap{position:relative;z-index:2;text-align:center;max-width:840px}
+.crumb{
+  font-size:13px;color:var(--redup);margin-bottom:18px;display:flex;gap:8px;
+  align-items:center;justify-content:center;flex-wrap:wrap;
+}
+.crumb a{color:var(--biru);text-decoration:none;font-weight:600}
+.crumb a:hover{text-decoration:underline}
+.hero h1{
+  font-size:38px;line-height:1.2;font-weight:800;color:var(--biru-tua);
+  letter-spacing:-.7px;margin-bottom:16px;
+}
+.hero h1 em{color:var(--biru);font-style:normal}
+.hero .lede{font-size:17.5px;color:var(--redup);max-width:640px;margin:0 auto 28px}
+.hero-cta{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
+
+/* ---------- Section ---------- */
+section{padding:64px 0}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 44px}
+.sec-head .kicker{
+  display:inline-block;font-size:11.5px;letter-spacing:1.9px;text-transform:uppercase;
+  color:var(--emas);font-weight:800;margin-bottom:11px;
+}
+.sec-head h2{font-size:32px;color:var(--biru-tua);line-height:1.25;margin-bottom:12px;
+  font-weight:800;letter-spacing:-.5px}
+.sec-head p{color:var(--redup);font-size:16.5px}
+
+/* ---------- Kartu Visa (gaya Payung Madinah) ---------- */
+.visa-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(305px,1fr));gap:22px}
+.vcard{
+  background:#fff;border:1px solid var(--garis);border-radius:16px;padding:0;
+  display:flex;flex-direction:column;overflow:hidden;
+  transition:transform .2s,box-shadow .2s,border-color .2s;
+}
+.vcard:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(11,58,111,.13);border-color:var(--emas)}
+.vcard-top{
+  padding:20px 22px 18px;border-bottom:1px solid var(--garis);background:var(--abu);
+  display:flex;justify-content:space-between;align-items:flex-start;gap:12px;
+}
+.vcard-top .nm{font-size:19px;font-weight:800;color:var(--biru-tua);line-height:1.25}
+.vcard-top .sub{font-size:13px;color:var(--redup);margin-top:3px}
+.badge-dur{
+  font-size:11px;font-weight:800;color:var(--biru);background:var(--biru-langit);
+  border:1px solid #C9DDF2;padding:5px 11px;border-radius:999px;white-space:nowrap;
+}
+.badge-dur.emas-badge{color:#7A5C08;background:var(--emas-pucat);border-color:#E8D89A}
+.vcard-body{padding:20px 22px;display:flex;flex-direction:column;gap:16px;flex:1}
+.vharga{display:flex;align-items:baseline;gap:8px}
+.vharga .angka{font-size:38px;font-weight:800;color:var(--biru);line-height:1;letter-spacing:-1px}
+.vharga .satuan{font-size:14px;color:var(--redup);font-weight:600}
+.vcard ul{list-style:none;display:grid;gap:9px;font-size:14px;color:var(--redup)}
+.vcard ul li{display:flex;gap:9px;align-items:flex-start;line-height:1.5}
+.vcard ul li svg{flex-shrink:0;margin-top:3.5px}
+.vcard .garis-putus{border:none;border-top:1px dashed var(--garis);margin:2px 0}
+.vcatatan{font-size:12.5px;color:var(--redup);font-style:italic}
+.vcard .btn{width:100%;margin-top:auto}
+
+/* Kartu yang ditonjolkan */
+.vcard.unggulan{border-color:var(--emas);border-width:2px;position:relative}
+.vcard.unggulan::before{
+  content:"Paling Diminta";position:absolute;top:0;right:0;
+  background:var(--emas);color:var(--biru-tua);font-size:10.5px;font-weight:800;
+  padding:5px 13px;border-bottom-left-radius:12px;letter-spacing:.6px;
+  text-transform:uppercase;
+}
+
+/* ---------- Keunggulan ---------- */
+.unggul-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.unggul{
+  background:var(--abu);border:1px solid var(--garis);border-radius:14px;padding:24px 22px;text-align:center;
+}
+.unggul .ikon{
+  width:46px;height:46px;border-radius:12px;background:#fff;border:1px solid var(--garis);
+  display:flex;align-items:center;justify-content:center;margin:0 auto 14px;
+}
+.unggul b{display:block;font-size:15.5px;color:var(--biru-tua);font-weight:700;margin-bottom:6px}
+.unggul span{font-size:14px;color:var(--redup);line-height:1.55}
+
+/* ---------- Langkah ---------- */
+.langkah-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:l}
+.lgk{background:#fff;border:1px solid var(--garis);border-radius:14px;padding:22px 20px;position:relative}
+.lgk::before{
+  counter-increment:l;content:counter(l);
+  position:absolute;top:-14px;left:20px;width:32px;height:32px;border-radius:50%;
+  background:var(--biru);color:#fff;font-weight:800;font-size:14.5px;
+  display:flex;align-items:center;justify-content:center;border:3px solid #fff;
+}
+.lgk h3{font-size:16px;color:var(--biru-tua);margin:12px 0 7px;font-weight:700}
+.lgk p{font-size:14px;color:var(--redup)}
+
+/* ---------- FAQ ---------- */
+.faq{display:grid;gap:12px;max-width:840px;margin:0 auto}
+details{background:#fff;border:1px solid var(--garis);border-radius:12px}
+summary{
+  cursor:pointer;padding:17px 20px;font-weight:700;color:var(--biru-tua);font-size:16px;
+  list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--emas);font-size:23px;font-weight:400;line-height:1}
+details[open] summary::after{content:"\2212"}
+details p{padding:0 20px 18px;color:var(--redup);font-size:15.5px}
+
+/* ---------- Kantor ---------- */
+.kantor{
+  background:var(--biru-tua);color:#fff;padding:56px 0;text-align:center;
+  border-top:4px solid var(--emas);
+}
+.kantor h2{font-size:28px;margin-bottom:13px;font-weight:800;color:#fff}
+.kantor p{color:#AEC6DE;max-width:560px;margin:0 auto 26px;font-size:16.5px}
+.kantor-info{display:flex;gap:34px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
+.kantor-info div{font-size:14px;color:#AEC6DE}
+.kantor-info strong{display:block;color:#fff;font-size:17px;font-weight:700;margin-bottom:3px}
+
+/* ---------- CTA band ---------- */
+.cta-band{
+  background:linear-gradient(150deg,var(--biru) 0%,var(--biru-tua) 100%);
+  color:#fff;padding:64px 0;text-align:center;
+}
+.cta-band h2{font-size:30px;margin-bottom:13px;color:#fff;font-weight:800}
+.cta-band p{color:#BBD2E8;max-width:560px;margin:0 auto 28px;font-size:16.5px}
+.wa-num{display:block;margin-top:14px;font-size:23px;color:var(--emas-terang);font-weight:800;letter-spacing:1.2px}
+
+/* ---------- Footer ---------- */
+footer{background:#0A2E58;color:#93AEC8;padding:42px 0 28px;font-size:14px}
+.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:32px;margin-bottom:28px}
+.foot h4{color:#fff;font-size:14px;font-weight:700;margin-bottom:12px}
+.foot ul{list-style:none;display:grid;gap:9px}
+.foot a{color:#93AEC8;text-decoration:none;transition:color .18s}
+.foot a:hover{color:var(--emas-terang)}
+.foot-bottom{border-top:1px solid rgba(147,174,200,.22);padding-top:20px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px}
+.ppiu{font-size:12.5px;color:#7B99B6;margin-top:8px}
+
+/* ---------- Mobile (R-03) ---------- */
+@media(max-width:980px){
+  .hero h1{font-size:31px}
+  .unggul-grid{grid-template-columns:1fr}
+  .langkah-grid{grid-template-columns:1fr 1fr}
+  .foot{grid-template-columns:1fr 1fr}
+  nav{display:none}
+  nav.open{
+    display:flex;flex-direction:column;align-items:stretch;gap:0;
+    position:absolute;top:100%;left:0;right:0;background:#fff;
+    border-bottom:1px solid var(--garis);padding:10px 24px 20px;
+    box-shadow:0 14px 30px rgba(11,58,111,.14);
+  }
+  nav.open a{padding:14px 0;border-bottom:1px solid var(--garis)}
+  nav.open a:last-of-type{border-bottom:none}
+  nav.open .btn{margin-top:16px;width:100%}
+  .menu-btn{display:block}
+}
+@media(max-width:620px){
+  body{font-size:15.5px}
+  section{padding:50px 0}
+  .hero{padding:44px 0 46px}
+  .hero h1{font-size:26px}
+  .hero .lede{font-size:15.5px}
+  .sec-head h2{font-size:25px}
+  .visa-grid{grid-template-columns:1fr}
+  .langkah-grid{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+  .btn{width:100%}
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .vharga .angka{font-size:33px}
+  .kantor-info{gap:22px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="BIN SEF, ke halaman utama">
+      <svg viewBox="0 0 64 64" role="img" aria-label="Logo BIN SEF">
+        <path d="M32 4 60 20v28L32 64 4 48V20z" fill="#1256A0"/>
+        <path d="M32 4 60 20 32 36 4 20z" fill="#1E6FC4"/>
+        <path d="M32 4 60 20 32 36 4 20z" fill="none" stroke="#C9A227" stroke-width="2.2"/>
+        <path d="M32 36v28M4 20v28l28 16 28-16V20" fill="none" stroke="#C9A227" stroke-width="2.2"/>
+        <path d="M32 36 6 21M32 36l26-15" fill="none" stroke="#C9A227" stroke-width="1.1" stroke-opacity=".55"/>
+      </svg>
+      <span>
+        <span class="wordmark">BIN <span>SEF</span></span>
+        <span class="tagline">B2B Land Arrangement</span>
+      </span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navUtama" aria-label="Buka menu">&#9776;</button>
+    <nav id="navUtama" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <a href="visa.html" class="aktif" aria-current="page">Visa</a>
+      <a href="index.html#paket">Paket</a>
+      <a href="index.html#transport">Transportasi</a>
+      <a class="btn btn-emas" href="#konsultasi">Konsultasi Gratis</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<div class="hero">
+  <div class="wrap">
+    <div class="crumb">
+      <a href="index.html">Beranda</a> <span aria-hidden="true">&rsaquo;</span> <span>Apply Visa</span>
+    </div>
+    <h1>Permudah pengajuan <em>visa umroh</em> biro Anda</h1>
+    <p class="lede">
+      Visa mandiri, visa grup, sampai visa haji furoda. Anda kirim data jamaah,
+      kami urus pengajuannya.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-emas" href="https://wa.me/6281946111162?text=Assalamu%27alaikum%20BIN%20SEF%2C%20saya%20ingin%20konsultasi%20pengajuan%20visa%20umroh%20untuk%20grup%20biro%20saya." target="_blank" rel="noopener">
+        Konsultasi Gratis
+        <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="btn btn-biru" href="#jenis">Lihat Jenis Visa</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ JENIS VISA ============ -->
+<section id="jenis">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Pilih Visa Anda</span>
+      <h2>Pilih visa sesuai kebutuhan jamaah</h2>
+      <p>Semua harga dalam USD dan dapat berubah mengikuti kurs serta kebijakan Pemerintah Arab Saudi.</p>
+    </div>
+
+    <div class="visa-grid">
+
+      <!-- Visa Group -->
+      <div class="vcard unggulan">
+        <div class="vcard-top">
+          <div>
+            <div class="nm">Visa Group</div>
+            <div class="sub">Umroh Saudi Arabia</div>
+          </div>
+          <span class="badge-dur emas-badge">90 hari</span>
+        </div>
+        <div class="vcard-body">
+          <div class="vharga"><span class="angka">$165</span><span class="satuan">/ pax</span></div>
+          <ul>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Minimal 25 pax per grup</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Tasreh Raudha</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Ziarah Makkah &amp; Madinah</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Pengantaran pulang</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>BRN</span></li>
+          </ul>
+          <hr class="garis-putus">
+          <p class="vcatatan">Bila kurang dari 35 pax, harga menyesuaikan.</p>
+          <a class="btn btn-emas" href="https://wa.me/6281946111162?text=Assalamu%27alaikum%20BIN%20SEF%2C%20saya%20ingin%20tanya%20Visa%20Group%20untuk%20grup%20biro%20saya." target="_blank" rel="noopener">Ajukan Visa Group</a>
+        </div>
+      </div>
+
+      <!-- Visa Mandiri -->
+      <div class="vcard">
+        <div class="vcard-top">
+          <div>
+            <div class="nm">Visa Mandiri</div>
+            <div class="sub">Umroh Saudi Arabia</div>
+          </div>
+          <span class="badge-dur">90 hari</span>
+        </div>
+        <div class="vcard-body">
+          <div class="vharga"><span class="angka">$200</span><span class="satuan">/ pax</span></div>
+          <ul>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Visa saja, single entry</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Proses 2 sampai 3 hari</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Termasuk SISKOPATUH</span></li>
+          </ul>
+          <hr class="garis-putus">
+          <p class="vcatatan">Ajukan sebulan sebelum keberangkatan, supaya Anda bisa fokus cari hotel dan tiket.</p>
+          <a class="btn btn-biru" href="https://wa.me/6281946111162?text=Assalamu%27alaikum%20BIN%20SEF%2C%20saya%20ingin%20tanya%20Visa%20Mandiri%20untuk%20jamaah%20saya." target="_blank" rel="noopener">Ajukan Visa Mandiri</a>
+        </div>
+      </div>
+
+      <!-- Visa Mandiri Hemat -->
+      <div class="vcard">
+        <div class="vcard-top">
+          <div>
+            <div class="nm">Visa Mandiri</div>
+            <div class="sub">Umroh Saudi Arabia</div>
+          </div>
+          <span class="badge-dur">90 hari</span>
+        </div>
+        <div class="vcard-body">
+          <div class="vharga"><span class="angka">$175</span><span class="satuan">/ pax</span></div>
+          <ul>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Visa saja, single entry</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Proses 2 sampai 3 hari</span></li>
+          </ul>
+          <hr class="garis-putus">
+          <p class="vcatatan">Ajukan sebulan sebelum keberangkatan. Harga mengikuti kurs yang berlaku.</p>
+          <a class="btn btn-biru" href="https://wa.me/6281946111162?text=Assalamu%27alaikum%20BIN%20SEF%2C%20saya%20ingin%20tanya%20Visa%20Mandiri%20untuk%20jamaah%20saya." target="_blank" rel="noopener">Ajukan Visa</a>
+        </div>
+      </div>
+
+      <!-- Visa Tourist -->
+      <div class="vcard">
+        <div class="vcard-top">
+          <div>
+            <div class="nm">Visa Tourist</div>
+            <div class="sub">Visa Siyahah</div>
+          </div>
+          <span class="badge-dur">Multiple 1 tahun</span>
+        </div>
+        <div class="vcard-body">
+          <div class="vharga"><span class="angka">$600</span><span class="satuan">/ pax</span></div>
+          <ul>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Multiple entry 1 tahun</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Bisa bolak balik Saudi Arabia selama setahun</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Maksimal tinggal 90 hari per kunjungan</span></li>
+          </ul>
+          <a class="btn btn-biru" href="https://wa.me/6281946111162?text=Assalamu%27alaikum%20BIN%20SEF%2C%20saya%20ingin%20tanya%20Visa%20Tourist." target="_blank" rel="noopener">Ajukan Visa Tourist</a>
+        </div>
+      </div>
+
+      <!-- Visa Haji Furoda -->
+      <div class="vcard">
+        <div class="vcard-top">
+          <div>
+            <div class="nm">Visa Haji Furoda</div>
+            <div class="sub">Tanpa antre daftar tunggu</div>
+          </div>
+          <span class="badge-dur">Musim haji</span>
+        </div>
+        <div class="vcard-body">
+          <div class="vharga"><span class="angka">$11.000</span><span class="satuan">/ pax</span></div>
+          <ul>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Termasuk Masyair</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Untuk keberangkatan musim haji</span></li>
+          </ul>
+          <hr class="garis-putus">
+          <p class="vcatatan">Kuota terbatas. Konfirmasi lebih awal untuk mengunci kurs.</p>
+          <a class="btn btn-biru" href="https://wa.me/6281946111162?text=Assalamu%27alaikum%20BIN%20SEF%2C%20saya%20ingin%20tanya%20Visa%20Haji%20Furoda." target="_blank" rel="noopener">Tanya Kuota Haji Furoda</a>
+        </div>
+      </div>
+
+      <!-- Visa Ziarah Syakhsiah -->
+      <div class="vcard">
+        <div class="vcard-top">
+          <div>
+            <div class="nm">Visa Ziarah Syakhsiah</div>
+            <div class="sub">Menetap di Saudi</div>
+          </div>
+          <span class="badge-dur">1 tahun</span>
+        </div>
+        <div class="vcard-body">
+          <div class="vharga"><span class="angka">$8.500</span><span class="satuan">/ pax</span></div>
+          <ul>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Durasi menetap 1 tahun di Saudi</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Untuk keperluan ziarah jangka panjang</span></li>
+          </ul>
+          <a class="btn btn-biru" href="https://wa.me/6281946111162?text=Assalamu%27alaikum%20BIN%20SEF%2C%20saya%20ingin%20tanya%20Visa%20Ziarah%20Syakhsiah." target="_blank" rel="noopener">Tanya Visa Ziarah</a>
+        </div>
+      </div>
+
+      <!-- Visa Dubai -->
+      <div class="vcard">
+        <div class="vcard-top">
+          <div>
+            <div class="nm">Visa Tourist Dubai</div>
+            <div class="sub">Visa khusus UEA</div>
+          </div>
+          <span class="badge-dur">Kunjungan</span>
+        </div>
+        <div class="vcard-body">
+          <div class="vharga"><span class="angka">$210</span><span class="satuan">/ pax</span></div>
+          <ul>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Visa saja</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8.5 6 12.5 14 3.5" fill="none" stroke="#C9A227" stroke-width="2.3" stroke-linecap="round"/></svg><span>Untuk transit atau kunjungan ke Dubai</span></li>
+          </ul>
+          <a class="btn btn-biru" href="https://wa.me/6281946111162?text=Assalamu%27alaikum%20BIN%20SEF%2C%20saya%20ingin%20tanya%20Visa%20Dubai." target="_blank" rel="noopener">Tanya Visa Dubai</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ KEUNGGULAN ============ -->
+<section style="background:var(--abu);border-top:1px solid var(--garis);border-bottom:1px solid var(--garis)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Kenapa Lewat Kami</span>
+      <h2>Tiga hal yang kami jamin</h2>
+    </div>
+    <div class="unggul-grid">
+      <div class="unggul">
+        <div class="ikon">
+          <svg width="21" height="21" viewBox="0 0 22 22" aria-hidden="true"><rect x="3" y="5" width="16" height="13" rx="2.5" fill="none" stroke="#1256A0" stroke-width="1.8"/><circle cx="11" cy="11.5" r="3.2" fill="none" stroke="#1256A0" stroke-width="1.8"/></svg>
+        </div>
+        <b>Harga tetap setelah DP</b>
+        <span>Setelah uang muka masuk, harga yang disepakati tidak berubah di tengah proses.</span>
+      </div>
+      <div class="unggul">
+        <div class="ikon">
+          <svg width="21" height="21" viewBox="0 0 22 22" aria-hidden="true"><path d="M3 6h16v10H3z" fill="none" stroke="#1256A0" stroke-width="1.8"/><path d="M3 10h16M7 14h4" stroke="#1256A0" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <b>Kamar sesuai pesanan</b>
+        <span>Kamar yang Anda pesan itulah yang diterima jamaah. Bukan kamar pengganti.</span>
+      </div>
+      <div class="unggul">
+        <div class="ikon">
+          <svg width="21" height="21" viewBox="0 0 22 22" aria-hidden="true"><path d="M4 15.5V9l7-5 7 5v6.5" fill="none" stroke="#1256A0" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 15.5V12h5v3.5" fill="none" stroke="#1256A0" stroke-width="1.8"/></svg>
+        </div>
+        <b>Handling CI dan antar koper</b>
+        <span>Gratis untuk grup. Petugas kami bantu proses check in dan antar koper ke kamar.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LANGKAH ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Cara Mengajukan</span>
+      <h2>Empat langkah, selesai</h2>
+      <p>Anda kirim data, kami proses sampai visa terbit.</p>
+    </div>
+    <div class="langkah-grid">
+      <div class="lgk">
+        <h3>Kirim data jamaah</h3>
+        <p>Nama lengkap, nomor paspor, dan masa berlaku paspor. Bisa lewat WhatsApp atau email.</p>
+      </div>
+      <div class="lgk">
+        <h3>Kami cek kelengkapan</h3>
+        <p>Data diperiksa. Kalau ada yang kurang, kami kabari bagian mana yang perlu dilengkapi.</p>
+      </div>
+      <div class="lgk">
+        <h3>Pengajuan dan DP</h3>
+        <p>Setelah data lengkap dan uang muka masuk, pengajuan visa langsung diproses.</p>
+      </div>
+      <div class="lgk">
+        <h3>Visa terbit</h3>
+        <p>Visa dikirim ke biro Anda. Anda terima kabar di setiap perubahan status.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section style="background:var(--abu);border-top:1px solid var(--garis);border-bottom:1px solid var(--garis)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Pertanyaan Seputar Visa</span>
+      <h2>Yang sering ditanyakan biro</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>Berapa lama proses visanya?</summary>
+        <p>Untuk visa mandiri, prosesnya 2 sampai 3 hari kerja setelah data lengkap. Visa grup menyesuaikan jadwal pengajuan kolektif.</p>
+      </details>
+      <details>
+        <summary>Kapan sebaiknya mengajukan?</summary>
+        <p>Untuk visa mandiri, ajukan sebulan sebelum keberangkatan. Setelah visa terbit, Anda bisa fokus mencari hotel dan tiket dengan harga lebih baik.</p>
+      </details>
+      <details>
+        <summary>Apakah harga bisa berubah?</summary>
+        <p>Bisa. Harga visa mengikuti kurs dan kebijakan Pemerintah Arab Saudi. Namun setelah DP masuk pada paket, harga yang disepakati kami kunci.</p>
+      </details>
+      <details>
+        <summary>Visa grup minimal berapa orang?</summary>
+        <p>Minimal 25 pax. Kalau jumlah jamaah di bawah 35 pax, harga menyesuaikan. Kabari kami jumlah pastinya untuk dapat hitungan akurat.</p>
+      </details>
+      <details>
+        <summary>Apa itu Tasreh Raudha?</summary>
+        <p>Izin masuk ke Raudhah, area di Masjid Nabawi yang banyak dicari jamaah. Sudah termasuk di paket visa grup kami.</p>
+      </details>
+      <details>
+        <summary>Apakah bisa mengurus visa saja tanpa paket lengkap?</summary>
+        <p>Bisa. Visa mandiri memang hanya visa. Untuk paket lengkap dengan hotel dan transportasi, lihat halaman <a href="index.html#paket" style="color:var(--biru);font-weight:600">Paket Land Arrangement</a>.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<div class="cta-band" id="konsultasi">
+  <div class="wrap">
+    <h2>Siap ajukan visa untuk grup Anda?</h2>
+    <p>Kirim jumlah jamaah dan tanggal keberangkatan. Kami balas dengan persyaratan dan estimasi biayanya.</p>
+    <a class="btn btn-emas" href="https://wa.me/6281946111162?text=Assalamu%27alaikum%20BIN%20SEF%2C%20saya%20ingin%20konsultasi%20pengajuan%20visa%20umroh%20untuk%20grup%20biro%20saya." target="_blank" rel="noopener">
+      Chat WhatsApp Sekarang
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <span class="wa-num">+62 819-4611-1162</span>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div style="display:flex;align-items:center;gap:11px;margin-bottom:12px">
+          <svg width="32" height="32" viewBox="0 0 64 64" role="img" aria-label="Logo BIN SEF">
+            <path d="M32 4 60 20v28L32 64 4 48V20z" fill="#1E6FC4"/>
+            <path d="M32 4 60 20 32 36 4 20z" fill="#2E84D8"/>
+            <path d="M32 4 60 20 32 36 4 20z" fill="none" stroke="#C9A227" stroke-width="2.2"/>
+            <path d="M32 36v28M4 20v28l28 16 28-16V20" fill="none" stroke="#C9A227" stroke-width="2.2"/>
+          </svg>
+          <div>
+            <span class="wordmark" style="font-size:18px;color:#fff">BIN <span>SEF</span></span>
+            <span class="tagline" style="display:block;color:#7B99B6">B2B Land Arrangement</span>
+          </div>
+        </div>
+        <p style="max-width:330px">Mitra land arrangement, transportasi, dan pengurusan visa umroh untuk biro perjalanan.</p>
+      </div>
+      <div>
+        <h4>Halaman</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="visa.html">Visa Umroh</a></li>
+          <li><a href="index.html#paket">Paket Land Arrangement</a></li>
+          <li><a href="index.html#transport">Transportasi</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hubungi</h4>
+        <ul>
+          <li><a href="https://wa.me/6281946111162" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://instagram.com/labinsef" target="_blank" rel="noopener">Instagram @labinsef</a></li>
+          <li><a href="https://tiktok.com/@labinsef" target="_blank" rel="noopener">TikTok @labinsef</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 BIN SEF. Harga visa dalam USD.</span>
+      <span>Harga mengikuti kurs dan kebijakan Pemerintah Arab Saudi.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Menu mobile: buka, tutup, tutup dengan Escape (R-26, R-32)
+(function(){
+  var btn = document.getElementById('menuBtn');
+  var nav = document.getElementById('navUtama');
+  if(!btn || !nav) return;
+  function tutup(){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); btn.innerHTML='&#9776;'; }
+  function buka(){ nav.classList.add('open'); btn.setAttribute('aria-expanded','true'); btn.innerHTML='&times;'; }
+  btn.addEventListener('click', function(){ nav.classList.contains('open') ? tutup() : buka(); });
+  nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', tutup); });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && nav.classList.contains('open')){ tutup(); btn.focus(); }
+  });
+  window.addEventListener('resize', function(){ if(window.innerWidth > 980) tutup(); });
+})();
+</script>
+
+</body>
+</html>
